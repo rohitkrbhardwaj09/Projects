@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon_io/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/057bff2a04.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dictionary App</title>
+    <style>
+      .input-container {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="sound" src=""></audio>
+
+    <div
+      class="w-screen h-screen bg-purple-300 flex items-center justify-center"
+    >
+      <div class="p-5 min-w-80 max-w-md bg-purple-50">
+        <div class="flex gap-3">
+          <div class="input-container">
+            <input
+              type="text"
+              class="border-b-[3px] p-1 bg-purple-50 outline-none border-purple-300 w-full"
+              placeholder="Type the word here..."
+              id="inp-word"
+            />
+          </div>
+          <div class="">
+            <button
+              class="px-3.5 py-1.5 text-white bg-purple-400 rounded-sm"
+              id="search-btn"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

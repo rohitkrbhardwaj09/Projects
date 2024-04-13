@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
